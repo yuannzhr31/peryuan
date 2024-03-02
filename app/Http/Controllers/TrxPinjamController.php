@@ -62,7 +62,9 @@ class TrxPinjamController extends Controller
 
     public function edit(TransaksiPinjam $pinjam)
     {   
-        return view('pinjam.edit', compact('pinjam'));
+        $koleksis = Koleksi::all();
+    $anggotas = Anggota::all();
+    return view('pinjam.edit', compact('pinjam', 'koleksis', 'anggotas'));
     }
 
     public function update(Request $request, TransaksiPinjam $pinjam)
@@ -78,7 +80,7 @@ class TrxPinjamController extends Controller
             'jns_media'  => 'required',
         ]);
         
-        $$anggota = TransaksiPinjam::where('id', $id)->update([
+        $anggotas = TransaksiPinjam::where('id', $pinjam->id)->update([
             'kd_anggota'  => $request->kd_anggota,
             'tg_pinjam'  => $request->tg_pinjam,
             'tg_bts_kembali'  => $request->tg_bts_kembali,
@@ -89,7 +91,7 @@ class TrxPinjamController extends Controller
             'jns_media'  => $request->jns_media,
             'id_pengguna'  => $request->user()->id,
         ]);
-
+    
         return redirect()->route('pinjams.index')->withSuccess('Great! You have Successfully updated transaksi');
     }
 

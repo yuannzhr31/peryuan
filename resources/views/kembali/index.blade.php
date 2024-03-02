@@ -16,7 +16,7 @@
                     <a href="{{ route('kembalis.create') }}" class="btn btn-sm btn-secondary">
                         Tambah Kembali
                     </a>
-                    <table class="table" id="sample_data">
+                    <table class="table" id="sample_data" style="width: 100%; border-collapse: collapse;">
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
