@@ -60,8 +60,9 @@
                                 <label class="form-label">Jenis Bahan Pustaka</label>
                                 <select class="form-select" id="jns_bhn_pustaka" name="jns_bhn_pustaka" aria-label="jns_bhn_pustaka">
                                     <option value="">Choose</option>
-                                    <option value="Laki-laki">Laki-laki</option>
-                                    <option value="Perempuan">Perempuan</option>
+                                    <option value="Buku">Buku</option>
+                                    <option value="Terbitan">Terbitan</option>
+                                    <option value="Non-cetak">Non-cetak</option>
                                 </select>
                                 <span id="jns_bhn_pustaka_error" class="text-danger"></span>
                             </div>
@@ -69,8 +70,10 @@
                                 <label class="form-label">Jenis Koleksi</label>
                                 <select class="form-select" id="jns_koleksi" name="jns_koleksi" aria-label="jns_koleksi">
                                     <option value="">Choose</option>
-                                    <option value="Laki-laki">Laki-laki</option>
-                                    <option value="Perempuan">Perempuan</option>
+                                    <option value="buku">Buku</option>
+                                    <option value="novel">Novel</option>
+                                    <option value="penelitian">Penelitian</option>
+                                    <option value="artikel">Artikel</option>
                                 </select>
                                 <span id="jns_koleksi_error" class="text-danger"></span>
                             </div>
@@ -78,8 +81,8 @@
                                 <label class="form-label">Jenis Media</label>
                                 <select class="form-select" id="jns_media" name="jns_media" aria-label="jns_media">
                                     <option value="">Choose</option>
-                                    <option value="Laki-laki">Laki-laki</option>
-                                    <option value="Perempuan">Perempuan</option>
+                                    <option value="Online">Online</option>
+                                    <option value="Offline">Offline</option>
                                 </select>
                                 <span id="jns_media_error" class="text-danger"></span>
                             </div>

@@ -113,7 +113,7 @@
                                 <select class="form-select" id="jns_koleksi" name="jns_koleksi" aria-label="jns_koleksi">
                                     <option value="">Choose</option>
                                     <option value="buku">Buku</option>
-                                    <option value="novel">Penelitian</option>
+                                    <option value="novel">Novel</option>
                                     <option value="penelitian">Penelitian</option>
                                     <option value="artikel">Artikel</option>
                                 </select>
