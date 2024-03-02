@@ -72,13 +72,21 @@
                             <a class="nav-link" href="{{ route('register') }}">Register</a>
                         </li>
                     @else
+                    <li class="nav-item">
+                            <a class="nav-link" href="{{ route('users.index') }}">Pengguna</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('anggotas.index') }}">Anggota</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('koleksis.index') }}">Koleksi</a>
                         </li>
-                      
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('pinjams.index') }}">Transaksi Pinjam</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('kembalis.index') }}">Transaksi Kembali</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('logout') }}">Logout</a>
                         </li>

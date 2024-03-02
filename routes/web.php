@@ -5,8 +5,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AnggotaController;
-
 use App\Http\Controllers\KoleksiController;
+use App\Http\Controllers\TrxPinjamController;
+use App\Http\Controllers\TrxKembaliController;
+use App\Http\Controllers\ReportController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,3 +40,7 @@ Route::get('anggota/showall', [AnggotaController::class, 'showAll'])->name('angg
 
 Route::resource('koleksis', KoleksiController::class); //users.index, users.create, users.edit, users.update, users.destroy
 Route::get('koleksi/showall', [KoleksiController::class, 'showAll'])->name('koleksi.all'); 
+
+Route::resource('pinjams', TrxPinjamController::class); //users.index, users.create, users.edit, users.update, users.destroy
+Route::resource('kembalis', TrxKembaliController::class); //users.index, users.create, users.edit, users.update, users.destroy
+Route::resource('reports', ReportController::class); //users.index, users.create, users.edit, users.update, users.destroy
